@@ -1,31 +1,40 @@
 div {margin: 0; padding: 0;}
-div div {background: #A4CA39; position: relative;}
+div div {background: #A4CA39;
+    position: relative;}
 
 .android{
-    height: 404px; width: 334px; margin: 0 auto;
+    height: 404px; width: 334px;
     margin: 100px auto;
 }
 .head{
-    width: 220px; height: 100px;
+    width: 220px; height: 100px; top: 32px;
 
     border-radius: 110px 110px 0 0;
+    transition: all 0.1s ease-in;
 }
 .l-eye, .r-eye {
     background: #fff;
     width: 20px; height: 20px;
     position: absolute; top: 42px;
-
     border-radius: 10px;
 }
 .l-eye{left: 50px;}
 .r-eye {right: 50px;}
 
-.l-ant, .r-ant{
-width: 6px; height: 50px; position: aboslute; top: -34px;
+.l-ant, .r-ant {
+width: 6px; height: 50px; 
+position: aboslute; top: -34px;
 border-radius: 3px;
 }
-.l-ant {left: 50px; transform: rotate(-30deg);}
-.r-ant {left: 50px; transform: rotate(30deg);}
+.l-ant {
+    left: 50px;
+    transform: rotate(-30deg);
+}
+.r-ant {
+    position: absolute;
+    right: 50px;
+    transform: rotate(30deg);
+}
 
 .body{
     width: 220px; height: 184px; top: 40px;
@@ -42,7 +51,7 @@ border-radius: 3px;
 }
 .l-leg, .r-leg {
     height: 80px; top: 182px;
-    border-radius: 0 0 25px;
+    border-radius: 0 0 25px 25px;
 }
 .l-arm{left: -58px;}
 .r-arm{right: -58px;}
@@ -50,7 +59,7 @@ border-radius: 3px;
 .r-leg{right: 45px;}
 
 .head:hover{
-    transform: rotate(-55deg) translate(-4px, -8px);
+    transform: rotate(-5deg) translate(-4px, -8px);
 }
 .l-arm:hover{
     transform: rotate(15deg) translate(-14px, 0);
